@@ -1,16 +1,48 @@
-body{
-	background-color: #284156;
+:root {
+  --background: #42b4ff;
+  --cards: #bff1ff;
+	--table-font-color: #ffffff;
+  --button: #3574a2;
+  --button-highlight: #3c93d0;
+	--footer-font: #007aa8;
+	--header-font: #ffffff;
+	--main-font: #ffffff;
+	--myColor-8: #80dcff;
 }
 
-.card{
+body{
+	background-color: var(--background);
+}
+
+h1,h2,h3{
+	color: var(--header-font);
+}
+
+.main-font{
+	color: var(--main-font);
+}
+
+table, th, td {
+  color: var(--table-font-color);
+}
+
+footer{
+	color: var(--footer-font);
+}
+#footerLink_Impressum{
+	text-decoration: none;
+	color: var(--footer-font);
+}
+
+.card {
 	margin-left: 5px;
 	margin-right: 5px;
 	margin-top: 10px;
 	margin-bottom: 10px;
 	text-align: center;
-	height: 30rem;
-	width: 20rem;
-	background-color: #b4b4b4;
+	height: 28rem;
+	width: 17rem;
+	background-color: var(--cards);
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -24,6 +56,8 @@ body{
     padding-bottom: 0px;
 }
 
+
+
 .navbar{
 	margin-bottom: 15px;
 }
@@ -35,7 +69,11 @@ body{
 	margin-right: auto;
 }
 
+.btn-primary{
+	 background-color: var(--button);
+}
+
 .btn-primary:hover{
- background-color: #1A5276; /* Green */
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+ 	background-color: var(--button-highlight); /* Green */
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }

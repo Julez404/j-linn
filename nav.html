@@ -1,29 +1,16 @@
-<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark ">
-	<a class="navbar-brand" href="https://j-linn.de">Linndas-Services</a>
+<nav class="navbar navbar-expand-lg navbar navbar-light bg-light ">
+	<a class="navbar-brand" href="/index.html"><i class="fas fa-server"></i> Linndas-Services</a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	<span class="navbar-toggler-icon"></span>
 	</button>
 	<div class="collapse navbar-collapse top" id="navbarSupportedContent">
 		<ul class="navbar-nav mr-auto">
-			<li class="nav-item active">
-				<a class="nav-link" href="https://j-linn.de">Home <span class="sr-only">(current)</span></a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="https://j-linn.de/services.html">Services List</a>
-			</li>
-			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Extern</a>
-				<div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-					<a class="dropdown-item" href="https://jlinn.ddnss.de:8080/">Fritzbox</a>
-					<a class="dropdown-item" href="https://jlinn.ddnss.de:4433/">DSM</a>
-					<a class="dropdown-item" href="https://jlinn.ddnss.de/file/">Filestation</a>
-					<a class="dropdown-item" href="https://jlinn.ddnss.de/drive/">Drive</a>
-					<a class="dropdown-item" href="https://jlinn.ddnss.de/">Backup-Website</a>
-				</div>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="https://j-linn.de/impressum.html">Impressum</a>
-			</li>
+			<li class="nav-item active"><a class="nav-link" id="Menue_Cards" onclick="activeMenue(this.id);" href="#">Home <span class="sr-only">(current)</span></a></li>
+			<li class="nav-item active"><a class="nav-link" id="Menue_Services" onclick="activeMenue(this.id);" href="#">Services List</a></li>
+			<li class="nav-item active"><a class="nav-link" id="Menue_Ts3status" onclick="activeMenue(this.id);" href="#">TS3-Status</a></li>
+			<li class="nav-item active"><a class="nav-link" id="Menue_About" onclick="activeMenue(this.id);" href="#">About</a></li>
 		</ul>
 	</div>
 </nav>
+
+<script>activeInit();</script>
