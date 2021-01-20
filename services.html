@@ -1,75 +1,76 @@
-<head>
-		<meta name="robots" content="noindex">
-		<meta name="ROBOTS" content="NOARCHIVE">
-</head>
-<h1>Service Overview</h1>
-<table class="table table-hover table-striped">
-	<thead> <!-- class="thead-dark" -->
-		<tr>
-			<th scope="col">#</th>
-			<th scope="col">Service</th>
-			<th scope="col">Provided by</th>
-			<th scope="col">Limitation</th>
-			<th scope="col">Note</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<th scope="row">1</th>
-			<td>Fritzbox</td>
-			<td>AVM Interface</td>
-			<td>Private use only</td>
-			<td></td>
-		</tr>
-		<tr>
-			<th scope="row">2</th>
-			<td>DSM, FileStation & Drive</td>
-			<td>Synology NAS</td>
-			<td>User login required</td>
-			<td>Operational time 6:00 to 24:00</td>
-		</tr>
-		<tr>
-			<th scope="row">3</th>
-			<td>TeamSpeak3</td>
-			<td>Selfhosted</td>
-			<td>Private Channels </br> limited to members</td>
-			<td>Available for everyone</td>
-		</tr>
-	</tbody>
-</table>
-</br>
-<h1>Service Links</h1>
-<table class="table table-hover table-striped">
-	<thead>
-		<tr>
-			<th scope="col">#</th>
-			<th scope="col">Service</th>
-			<th scope="col">Port</th>
-			<th scope="col">Webinterface</th>
-			<th scope="col">Serveradresse</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<th scope="row">1</th>
-			<td>Drive</td>
-			<td>6690</td>
-			<td>https://webdrive.j-linn.de/</td>
-			<td>drive.j-linn.de</td>
-		</tr>
-		<tr>
-			<th scope="row">3</th>
-			<td>Website Folder</td>
-			<td>443</td>
-			<td>https://dav.domain.de</td>
-			<td>https://dav.domain.de</td>
-		</tr>
-		<tr>
-			<th scope="row">3</th>
-			<td>WebDAV NAS</td>
-			<td>5016</td>
-			<td>https://webdav.j-linn.de</td>
-			<td>webdav.j-linn.de</td>
-		</tr>
-	</tbody>
-</table>
+<html>
+  <head>
+    <title>Linndas Services</title>
+    <link rel="icon" href="images/icon.jpg" />
+
+    <meta name="robots" content="noindex" />
+    <meta name="ROBOTS" content="NOARCHIVE" />
+
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="./js/main.js"></script>
+
+    <!-- StyleSheet -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/services.css" />
+  </head>
+  <body>
+    <div id="DIV_HEADER"></div>
+    <main>
+      <div class="services">
+        <div class="head">
+          <h1>Überblick der Dienste</h1>
+          <p>Alle aktuell angebotenen Dienste.</p>
+		</div>
+		
+        <div class="cards">
+          <div class="card">
+            <img src="./images/filestation-icon.png" alt="" />
+            <div class="card-info">
+              <h2>File Station</h2>
+              <p>
+                Zugriff auf alle Laufwerke, welche für dich freigegeben sind.
+              </p>
+			</div>
+			<button class="service-link" onclick="location.href='https://filestation.j-linn.de/'" type="button">Öffnen</button>
+		  </div>
+		  
+          <div class="card">
+            <img src="./images/drive-icon.png" alt="" />
+            <div class="card-info">
+              <h2>Drive</h2>
+              <p>Zugriff auf eine persönliche, unlimitierte, "Dropbox".</p>
+			</div>
+			<button class="service-link" onclick="location.href='https://webdrive.j-linn.de/'" type="button">Öffnen</button>
+		  </div>
+		  
+		  <div class="card">
+            <img src="./images/ts3-icon.png" alt="" />
+            <div class="card-info">
+              <h2>TeamSpeak 3</h2>
+              <p>Freie kommunikation miteinander.</p>
+            </div>
+            <div class="btn-group">
+				<button onclick="location.href='ts3server://185.243.9.129/ts3-status.html?port=9987'" type="button">Connect</button>
+				<button onclick="location.href='/ts3-status.html/'" type="button">Info</button>
+				<button onclick="location.href='/ts3interface/'" type="button">Admin</button>
+            </div>
+		  </div> 
+
+          <div class="card">
+            <img src="./img/gitea.png" alt="" />
+            <div class="card-info">
+              <h2>Gitea Server</h2>
+              <p>Git Server zum gemeinsamen arbeiten an Software Projekten.</p>
+			</div>
+			<button class="service-link" onclick="location.href='https://git.j-linn.de/'" type="button">Öffnen</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

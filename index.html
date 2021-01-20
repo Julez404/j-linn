@@ -1,37 +1,46 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Linndas Services</title>
-		<link rel="icon" href="images/icon.jpg">
+<html lang="de">
+  <head>
+    <title>Linndas Services</title>
+    <link rel="icon" href="images/icon.jpg" />
 
-		<meta charset="utf-8"/>
-		<meta name="robots" content="noindex">
-		<meta name="ROBOTS" content="NOARCHIVE">
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex" />
+    <meta name="ROBOTS" content="NOARCHIVE" />
 
-		<!-- JavaScript -->
-		<script src="/jquery-3.4.1.min.js"></script>
-		<script type="text/javascript" src="scripts/core.js"></script>
-		<script src="/popper-1.14.7/popper.min.js"></script>
-		<script src="/bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+    <!-- JavaScript -->
+	<script src="jquery-3.4.1.min.js"></script>
+	<script src="./js/main.js"></script>
 
-		<!-- StyleSheet -->
-		<link rel="stylesheet" href="/bootstrap-4.4.1-dist/css/bootstrap.min.css">
-		<link rel="stylesheet" href="/fontawesome/css/all.css">
-		<link rel="stylesheet" href="styles/core.css">
+    <!-- StyleSheet -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+	/>
+	<link rel="stylesheet" href="css/main.css">
+    <link type="text/html" rel="stylesheet" href="fontawesome/css/fontawesome.min.css" />
+  </head>
+  <body>
+    <div id="DIV_HEADER"></div>
 
-	</head>
-	<body>
-	  <div id="include_Nav"></div>
+    <main>
+      <section class="presentation">
+        <div class="introduction">
+          <div class="intro-text">
+            <h1>Hallo zusammen</h1>
+            <p>
+              Ich versuche mich gerne an verschiedensten Dingen, wie man an
+              Diensten und Projekten sehen kann.
+            </p>
+          </div>
+        </div>
+        <div class="profile-pic">
+          <img src="./img/yoshi.png" alt="Profilbild" />
+        </div>
+      </section>
+	</main>
 
-		<div class=container>
-			<div id="include_Cards"></div>
-		  <div id="include_Services"></div>
-			<div id="include_Ts3status"></div>
-			<div id="include_About"></div>
-		  <div id="include_Impressum"></div>
-
-			<div id="include_Footer"></div>
-		</div>
-
-	</body>
+	<div id="DIV_FOOTER"></div>
+  </body>
 </html>

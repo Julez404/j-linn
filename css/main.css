@@ -1,0 +1,102 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: #BBBBBB;
+}
+
+header {
+  display: flex;
+  margin: auto;
+  width: 90%;
+  height: 8rem;
+  align-items: center;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    text-align: center ;
+}
+
+.footer-info{
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo-container,
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container {
+  position: relative;
+  flex: 1;
+}
+
+.logo {
+  font-weight: 500;
+  margin: 10px;
+    font-size: 20px;
+}
+
+nav { 
+  flex: 1;
+}
+
+.nav-links {
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.nav-link {
+  color: #444444;
+  font-weight: 400;
+  font-size: 18px;
+text-decoration: none;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.presentation{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.introduction{
+    width: 50%;
+}
+
+.intro-text h1{
+    font-size: 44px;
+    font-weight: 500;
+}
+
+.intro-text p{
+    margin-top: 5px;
+    font-size: 22px;
+    color: #555555;
+}
+
+.cta{
+    padding: 50px, 0px,0px,0px;
+}
+
+.profile-pic img{
+    border-radius: 50%;
+    width: auto;
+    height: 100%;
+}
