@@ -14,16 +14,15 @@ jobs:
       run: zip -r archive.zip .
     - name: Print Dir
       run: ls -all
-    - name: copy folder content recursively to remote (clean directory)
-      uses: garygrossgarten/github-action-scp@release
+    - name: copy archive
+      uses: appleboy/scp-action@master
       with:
-        local: archive.zip
-        remote: /var/www/j-linn.de/
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
-        privateKey: ${{ secrets.KEY}}
-        port: ${{ secrets.PORT}}
-        rmRemote: true
+        key: ${{ secrets.KEY }}
+        port: ${{ secrets.PORT }}
+        source: "archive.zip"
+        target: "/var/www/j-linn.de/"
     - name: unzip and remove archive
       uses: garygrossgarten/github-action-ssh@release
       with:
