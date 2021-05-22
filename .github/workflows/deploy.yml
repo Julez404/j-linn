@@ -15,7 +15,7 @@ jobs:
     - name: copy folder content recursively to remote (clean directory)
       uses: garygrossgarten/github-action-scp@release
       with:
-        local: archive.zip
+        local: ./archive.zip
         remote: /var/www/j-linn.de/
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
@@ -33,3 +33,4 @@ jobs:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
         privateKey: ${{ secrets.KEY }}
+        port: ${{ secrets.PORT}}
