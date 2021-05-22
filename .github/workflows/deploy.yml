@@ -24,7 +24,6 @@ jobs:
         privateKey: ${{ secrets.KEY}}
         port: ${{ secrets.PORT}}
         rmRemote: true
-        dotfiles: false
     - name: unzip and remove archive
       uses: garygrossgarten/github-action-ssh@release
       with:
