@@ -11,7 +11,7 @@ jobs:
     - name: checkout
       uses: actions/checkout@v2
     - name: archive repository
-      run: zip -r archive.zip . -x "*/.*"
+      run: zip -r archive.zip . -x ".*"
     - name: Print Dir
       run: ls -all
     - name: copy archive
