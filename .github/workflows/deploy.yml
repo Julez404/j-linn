@@ -12,10 +12,12 @@ jobs:
       uses: actions/checkout@v2
     - name: archive repository
       run: zip -r archive.zip .
+    - name: Print Dir
+      run: ls -all
     - name: copy folder content recursively to remote (clean directory)
       uses: garygrossgarten/github-action-scp@release
       with:
-        local: /home/runner/work/j-linn/j-linn/archive.zip
+        local: archive.zip
         remote: /var/www/j-linn.de/
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
