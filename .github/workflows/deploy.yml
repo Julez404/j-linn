@@ -25,11 +25,11 @@ jobs:
         dotfiles: false
     - name: unzip and remove archive
       uses: garygrossgarten/github-action-ssh@release
-        with:
-          command: >-
-            cd /var/www/j-linn.de/ &&
-            unzip archive.zip &&
-            rm archive.zip
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          privateKey: ${{ secrets.KEY }}
+      with:
+        command: >-
+          cd /var/www/j-linn.de/ &&
+          unzip archive.zip &&
+          rm archive.zip
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        privateKey: ${{ secrets.KEY }}
