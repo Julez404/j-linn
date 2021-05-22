@@ -23,6 +23,7 @@ jobs:
         port: ${{ secrets.PORT }}
         source: "archive.zip"
         target: "/var/www/j-linn.de/"
+        rm: true
     - name: unzip and remove archive
       uses: garygrossgarten/github-action-ssh@release
       with:
